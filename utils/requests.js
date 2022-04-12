@@ -1,44 +1,44 @@
 const API_KEY = process.env.API_KEY;
 
 export default {
-  fetchTrending: {
+  trending: {
     title: "Trending",
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   },
-  fetchTopRated: {
+  topRated: {
     title: "Top Rated",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=28`,
+    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
   },
-  fetchComedyMovies: {
+  comedyMovies: {
     title: "Comedy",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=35`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
   },
-  fetchHorrorMovies: {
+  horrorMovies: {
     title: "Horror",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=27`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
   },
-  fetchRomanceMovies: {
+  romanceMovies: {
     title: "Romance",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=10749`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
   },
-  fetchMysteryMovies: {
+  mysteryMovies: {
     title: "Mystery",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=9648`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=9648`,
   },
-  fetchSciFiMovies: {
+  sciFiMovies: {
     title: "Sci-Fi",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=878`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=878`,
   },
-  fetchWesternMovies: {
+  westernMovies: {
     title: "Western",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=37`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=37`,
   },
-  fetchAnimationMovies: {
+  animationMovies: {
     title: "Animation",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=16`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
   },
-  fetchTV: {
+  tv: {
     title: "TV Series",
-    url: `/discover/movie?api_key=${API_KEY}&with_genre=10770`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`,
   },
 };
